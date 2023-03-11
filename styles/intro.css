@@ -1,0 +1,44 @@
+.text-org {
+  color: #ec5242;
+}
+
+.intro-text {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.text-gradient {
+  background:
+    radial-gradient(
+      64.18% 64.18% at 71.16% 35.69%,
+      #bd1a07 0.89%,
+      #bd1a07 17.23%,
+      #bd1a07 42.04%,
+      #bd1a07 55.12%,
+      #272a31 71.54%,
+      #bd1a07 100%
+    );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description-container {
+  margin-top: 30px;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+.description {
+  font-size: 13.23px;
+}
+
+.date {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.venue {
+  font-size: 14.5px;
+}

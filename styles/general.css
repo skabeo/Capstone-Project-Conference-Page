@@ -1,0 +1,41 @@
+body {
+  background-color: #d3d3d3;
+  padding: 25px 0;
+  color: #272a31;
+}
+
+*,
+*::before,
+*::after,
+p {
+  margin: 0;
+}
+
+.hamburger {
+  height: 20.83px;
+  width: 33.33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+.hamburger span {
+  height: 5px;
+  width: 100%;
+  display: block;
+  background-color: #272a31;
+}
+
+.hamburger span:first-child {
+  transform: translateY(-50%);
+}
+
+.hamburger span:last-child {
+  transform: translateY(50%);
+}
+
+.home-page {
+  margin-top: 60px;
+}
