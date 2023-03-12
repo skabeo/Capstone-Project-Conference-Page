@@ -3,10 +3,10 @@
   color: white;
   padding: 50px 10px;
   margin-top: 60px;
-  background: radial-gradient(circle, transparent 25%, #3e4043  26%),linear-gradient(45deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%);
-        background-size: 2em 2em;
-        background-color: #3e4043;
-        opacity: 1;
+  background: radial-gradient(circle, transparent 25%, #3e4043  26%), linear-gradient(45deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%);
+  background-size: 2em 2em;
+  background-color: #3e4043;
+  opacity: 1;
 }
 
 .main-text {
@@ -20,7 +20,8 @@
 }
 
 .main-card {
-  background-color: #3e4043;
+  background-color: #535557;
+  opacity: 0.73;
 }
 
 .fa-regular {
@@ -32,7 +33,8 @@
 }
 
 .card-occ {
-  color: #ec5242;
+  color: #ee4b39;
+  font-weight: 700;
 }
 
 .signup-btn {
