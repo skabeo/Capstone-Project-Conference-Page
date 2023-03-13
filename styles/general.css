@@ -1,7 +1,9 @@
 body {
-  background-color: #f4efef;
+  background-color: #d3d3d3;
   padding: 25px 0;
+  padding-bottom: 40px;
   color: #272a31;
+  font-family: Lato, sans-serif;
 }
 
 *,
@@ -38,4 +40,11 @@ p {
 
 .home-page {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0;
+    padding-bottom: 70px;
+  }
 }

@@ -28,6 +28,7 @@
   border: 2px solid white;
   box-sizing: border-box;
   padding: 15px;
+  max-width: 550px;
 }
 
 .description {
@@ -42,4 +43,20 @@
 
 .venue {
   font-size: 14.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-text {
+    font-weight: 900;
+    font-size: 80px;
+  }
+
+  .date {
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .venue {
+    font-size: 20px;
+  }
 }
