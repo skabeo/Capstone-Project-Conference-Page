@@ -14,13 +14,60 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
+  <link rel="stylesheet" href="styles/nav.css">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/intro.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/speaker.css">
+  <link rel="stylesheet" href="styles/partner.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
+  <div class="desk-nav">
+    <div class="user-display d-none d-md-block">
+      <div class="container">
+        <ul class="user-ul list-unstyled d-flex justify-content-end align-items-center gap-3 py-2">
+          <li><a><img src="img/facebook.svg"></a></li>
+          <li><a><img src="img/twitter.svg"></a></li>
+          <li class="text-white"><a>English</a></li>
+          <li class="text-white"><a>My Page</a></li>
+          <li class="text-white"><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <nav class="navbar navbar-expand-md navbar-light p-0 d-none d-md-block">
+      <div class="container">
+        <a class="navbar-brand" href="#">Logo</a>
+        <div class="collapse navbar-collapse d-flex justify-content-end gap-4" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center gap-5 py-3">
+            <li class="nav-item active">
+              <a class="nav-link nav-about" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Join</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sponsor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item cc">
+              <a class="nav-link" href="#">CC Campaign</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  
+
   <div class="container-fluid container-sm">
-    <nav>
+    <nav class="d-block d-md-none">
       <div class="hamburger">
         <span></span>
         <span></span>
@@ -30,7 +77,7 @@
 
     <section class="home-page">
       <p class="fs-2 mb-2 text-org">"Hello! Sharing world"</p>
-      <p class="lh-1 text-gradient intro-text">CREATIVE COMMONS GLOBAL SUMMIT<br> 2015</p>
+      <p class="lh-1 text-gradient intro-text">CREATIVE COMMONS<br> GLOBAL SUMMIT<br> 2015</p>
       <div class="description-container">
         <p class="description">A joyful celebration believing in the value of openess and sharing, creating a positive change with people from over 80 countries is taking place in October, in Korea.</p>
       </div>
@@ -43,7 +90,7 @@
     <div class="main-content-container">
       <p class="text-center main-text mb-3">Main Program</p>
       <p class="line mb-5"></p>
-      <div class="d-flex flex-column gap-2">
+      <div class="d-flex flex-column gap-2 d-sm-none">
         <div class="main-card ps-4 py-2 d-flex align-items-center gap-3">
           <i class="fa-regular fa-envelope"></i>
           <p class="card-occ">Lecture</p>
@@ -70,17 +117,48 @@
           <p class="card-des">Listen to the speakers from various countries about the messages of sharing and opening</p>
         </div>
       </div>
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center mt-5 d-sm-none">
         <button class="signup-btn">Join CC Global Submit 2015</button>
       </div>
+      <div class="container">
+        <div class="d-none d-sm-grid desk-main-container">
+          <div class="d-flex flex-column align-items-center desk-main-card">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="card-occ">Lecture</p>
+            <p class="card-des text-center mt-2">Listen to the speakers from various countries about the messages of sharing and opening</p>
+          </div>
+          <div class="d-flex flex-column align-items-center desk-main-card">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="card-occ">Lecture</p>
+            <p class="card-des text-center mt-2">Listen to the speakers from various countries about the messages of sharing and opening</p>
+          </div>
+          <div class="d-flex flex-column align-items-center desk-main-card">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="card-occ">Lecture</p>
+            <p class="card-des text-center mt-2">Listen to the speakers from various countries about the messages of sharing and opening</p>
+          </div>
+          <div class="d-flex flex-column align-items-center desk-main-card">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="card-occ">Lecture</p>
+            <p class="card-des text-center mt-2">Listen to the speakers from various countries about the messages of sharing and opening</p>
+          </div>
+          <div class="d-flex flex-column align-items-center desk-main-card">
+            <i class="fa-regular fa-envelope"></i>
+            <p class="card-occ">Lecture</p>
+            <p class="card-des text-center mt-2">Listen to the speakers from various countries about the messages of sharing and opening</p>
+          </div>
+        </div>
+        <p class="text-center text-decoration-underline see-program">SEE THE WHOLE PROGRAM</p>
+      </div>
+      
     </div>
   </section>
 
   <div class="container-fluid container-sm">
     <section class="featured-speakers mt-5">
-      <p class="text-center mb-2 fw-bold">Featured Speakers</p>
+      <p class="text-center mb-2 fw-bold feat-text">Featured Speakers</p>
       <p class="line mb-5"></p>
-      <div class="d-flex flex-column gap-5">
+      <div class="d-flex flex-column gap-5 d-md-none">
         <div class="d-flex gap-3 align-items-center">
           <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp" alt="speaker">
           <div>
@@ -100,6 +178,87 @@
           </div>
         </div>
         <button class="more-speaker py-2 d-flex align-items-center justify-content-center">MORE<img class="more-icon" src="img/down-arrow.png"></button>
+      </div>
+      <div class="d-none d-md-grid gap-4 speaker-container">
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="speaker">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="fw-bold">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="fw-bold">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="fw-bold">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="fw-bold">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-4">
+          <img class="img-fluid speaker-pic" src="img/speakers/Kwesi-ARthur.webp">
+          <div>
+            <p class="fw-bold">Kwesi Arthur</p>
+            <p class="speaker-des mt-1">Berkman Professor of Enterpreneurial Legal Studies at Harvard Law School</p>
+            <p class="speak-line mt-2"></p>
+            <p class="speaker-achievement mt-3">Benkler studies commons-based peer production, and published his seminal book The Wealth of Networking in 2006.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="partner-sec d-none d-md-block">
+    <div class="container part-holder">
+      <p class="part-text text-center mb-3">Partner</p>
+      <p class="part-line mx-auto"></p>
+      <div class="d-flex justify-content-center align-items-center part-logo gap-5">
+        <img class="img-fluid" src="img/partners/airbnb.png">
+        <img class="img-fluid" src="img/partners/binance.png">
+        <p class="coinbase">coinbase</p>
+        <img class="img-fluid" src="img/partners/dropbox.png">
+        <p class="google">Google</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container d-none d-md-block">
+    <section class="footer d-flex justify-content-center align-items-center">
+      <p class="footer-logo">creative<br>commons korea</p>
+      <div class="footer-des-container">
+        <p class="footer-right mb-3">2015 Creative Commons korea. All Rights Reserved</p>
+        <p class="footer-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit explicabo ex vero facilis accusamus culpa hic quo similique sit consequatur!
+        </p>
       </div>
     </section>
   </div>
