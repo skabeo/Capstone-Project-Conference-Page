@@ -1,8 +1,11 @@
 .main-content-container {
-  background-color: #272a31;
   color: white;
   padding: 50px 10px;
   margin-top: 60px;
+  background-color: #3e4043;
+  background-image: radial-gradient(circle, transparent 25%, #3e4043 26%), linear-gradient(45deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%), linear-gradient(135deg, transparent 46%, #2c2b33 47%, #2c2b33 52%, transparent 53%);
+  background-size: 1em 1em;
+  opacity: 1;
 }
 
 .main-text {
@@ -16,7 +19,8 @@
 }
 
 .main-card {
-  background-color: #3e4043;
+  background-color: #535557;
+  opacity: 0.73;
 }
 
 .fa-regular {
@@ -29,6 +33,8 @@
 
 .card-occ {
   color: #ec5242;
+  font-weight: 700;
+  opacity: 1;
 }
 
 .signup-btn {
@@ -40,36 +46,65 @@
   border-radius: 2px;
 }
 
-.speaker-pic {
-  width: 110px;
-  height: 110px;
+.desk-main-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
 }
 
-.speaker-des {
-  color: #ec5242;
-  font-style: italic;
-  font-size: 11px;
+.desk-main-card {
+  background-color: #535557;
+  opacity: 0.73;
+  padding: 20px 15px;
 }
 
-.speaker-achievement {
-  font-size: 10px;
+.desk-main-card:hover {
+  border: 3px solid white;
 }
 
-.speak-line {
-  border-bottom: 1.5px solid #9297a0;
-  width: 10%;
+.see-program {
+  margin-top: 70px;
 }
 
-.more-speaker {
-  border: 1px solid #9297a0;
+@media (min-width: 576px) and (max-width: 767px) {
+  .desk-main-container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+  }
 }
 
-.fa-angle-down {
-  border: none;
-  color: #ec5242;
+@media (min-width: 768px) and (max-width: 991px) {
+  .desk-main-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5px;
+  }
 }
 
-.more-icon {
-  height: 20px;
-  width: 20px;
+@media (min-width: 992px) and (max-width: 1199px) {
+  .desk-main-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-content-container {
+    margin-top: 150px;
+    padding-bottom: 80px;
+  }
+
+  .main-text {
+    font-size: 23px;
+  }
+
+  .line {
+    width: 3%;
+  }
+
+  .card-occ {
+    margin-top: 15px;
+  }
+
+  .card-des {
+    font-size: 16.7px;
+  }
 }
