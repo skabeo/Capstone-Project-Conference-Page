@@ -1,0 +1,24 @@
+.user-display {
+  background-color: #53564c;
+}
+
+.user-ul {
+  margin: 0;
+}
+
+.user-ul li {
+  font-size: 13px;
+}
+
+.navbar {
+  background-color: #fff;
+}
+
+.nav-about {
+  color: #ec5242;
+}
+
+.cc {
+  margin-left: 20px;
+  border: 4px solid #ec5242;
+}

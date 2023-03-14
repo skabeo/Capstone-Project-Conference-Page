@@ -56,4 +56,25 @@
 .footer-right {
   font-size: 12px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .desk-footer {
+    background-color: #272a31;
+    margin-top: 100px;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 300px;
+  }
+
+  .footer-right {
+    margin-bottom: 7px;
+  }
+
+  .footer-info {
+    font-size: 12px;
+    margin-top: 0;
+  }
 }

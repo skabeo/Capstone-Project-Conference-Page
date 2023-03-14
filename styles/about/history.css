@@ -15,3 +15,33 @@
 .past-img {
   height: 50%;
 }
+
+.past-event-container {
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .his-line {
+    color: rgb(193, 193, 193);
+  }
+
+  .hi-title {
+    font-size: 23px;
+  }
+
+  .hi-line {
+    width: 3%;
+  }
+
+  .hi-event {
+    font-size: 15px;
+  }
+
+  .past-event-container {
+    margin-top: 50px;
+  }
+
+  .past-img {
+    height: auto;
+  }
+}

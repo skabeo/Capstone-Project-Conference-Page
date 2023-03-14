@@ -1,6 +1,5 @@
 body {
   background-color: #fffcfc;
-  padding-bottom: 40px;
   color: #272a31;
   font-family: Lato, sans-serif;
 }
@@ -49,6 +48,5 @@ p {
 @media screen and (min-width: 768px) {
   body {
     padding: 0;
-    padding-bottom: 70px;
   }
 }

@@ -31,3 +31,25 @@
 .logo-date {
   font-size: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .about-page {
+    margin-top: 50px;
+    font-size: 23px;
+  }
+
+  .about-line {
+    width: 3%;
+  }
+
+  .logo-des {
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .logo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid rgb(232, 232, 232);
+  }
+}
