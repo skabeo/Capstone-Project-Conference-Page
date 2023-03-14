@@ -1,0 +1,17 @@
+.hi-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.hi-line {
+  border: 1px solid #ec5242;
+  width: 10%;
+}
+
+.hi-event {
+  font-size: 12px;
+}
+
+.past-img {
+  height: 50%;
+}
