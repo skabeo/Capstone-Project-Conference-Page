@@ -1,0 +1,56 @@
+.user-display {
+  background-color: #53564c;
+}
+
+.user-ul {
+  margin: 0;
+}
+
+.user-ul li {
+  font-size: 13px;
+}
+
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  transition: color 0.25s;
+}
+
+.nav-link:hover {
+  color: #ec5242;
+}
+
+.cap-logo {
+  width: 100px;
+}
+
+.cc {
+  margin-left: 20px;
+  border: 4px solid #ec5242;
+}
+
+.right-arr {
+  width: 13px;
+}
+
+.home-icon {
+  width: 19px;
+}
+
+.home-nav,
+.about-nav {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.home-nav:hover {
+  color: #ec5242;
+  transition: all 0.25s;
+}
+
+.about-nav:hover {
+  color: #ec5242;
+}

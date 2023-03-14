@@ -1,8 +1,12 @@
 body {
-  background-color: #fff;
-  padding-bottom: 40px;
+  background-color: #fffcfc;
   color: #272a31;
   font-family: Lato, sans-serif;
+}
+
+.top-color {
+  background-color: #e6e9ef;
+  padding: 25px 12px 35px 12px;
 }
 
 *,
@@ -44,6 +48,5 @@ p {
 @media screen and (min-width: 768px) {
   body {
     padding: 0;
-    padding-bottom: 70px;
   }
 }
