@@ -7,19 +7,20 @@
 }
 
 .intro-main {
-  font-size: 34px;
+  font-size: 30px;
   font-weight: 900;
-  color: #bd1a07;
+  color: #ec5242;
 }
 
 .description-container {
   margin-top: 40px;
   border: 1px solid rgb(192, 192, 192);
   background-color: #fff;
+  padding: 20px 10px;
 }
 
 .description {
-  font-size: 13.23px;
+  font-size: 15px;
 }
 
 .intro-contact {
@@ -39,9 +40,21 @@
     color: #ec5242;
   }
 
+  .info-line {
+    border: 1px solid #ec5242;
+    width: 3%;
+    margin-top: 10px;
+  }
+
   .description-container {
     max-width: 900px;
+    padding: 25px 50px;
     background-color: #eef2fb;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .intro-contact {
@@ -58,5 +71,9 @@
     height: 18px;
     width: 15px;
     margin-left: 4px;
+  }
+
+  .main-sub {
+    margin-top: -25px;
   }
 }

@@ -47,12 +47,6 @@
   margin-top: 40px;
 }
 
-.footer-logo {
-  font-weight: 900;
-  line-height: 13px;
-  font-size: 20px;
-}
-
 .footer-right {
   font-size: 12px;
   font-weight: 600;
@@ -64,17 +58,16 @@
     background-color: #272a31;
     margin-top: 100px;
     color: white;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    padding-left: 300px;
+    padding: 50px 50px 50px 200px;
   }
 
   .footer-right {
     margin-bottom: 7px;
+    font-size: 15px;
   }
 
   .footer-info {
-    font-size: 12px;
+    font-size: 15px;
     margin-top: 0;
   }
 }

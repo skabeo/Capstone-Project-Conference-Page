@@ -52,4 +52,8 @@
     margin: 0 auto;
     border: 1px solid rgb(232, 232, 232);
   }
+
+  .logo-date {
+    font-size: 15px;
+  }
 }
