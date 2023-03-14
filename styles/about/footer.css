@@ -1,0 +1,59 @@
+.partner-sec {
+  background-color: #272a31;
+  margin-top: 50px;
+}
+
+.part-holder {
+  padding: 40px 0;
+}
+
+.part-text {
+  color: #fff;
+  font-size: 23px;
+}
+
+.part-line {
+  border: 1px solid #ec5242;
+  width: 10%;
+}
+
+.google {
+  color: #6d6d6d;
+  font-size: 30px;
+}
+
+.coinbase {
+  color: #777;
+  font-size: 30px;
+}
+
+.part-logo {
+  margin-top: 40px;
+}
+
+.part-logo img {
+  max-width: 90px;
+}
+
+.part-logo2 {
+  margin-top: 20px;
+}
+
+.part-logo2 img {
+  max-width: 90px;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer-logo {
+  font-weight: 900;
+  line-height: 13px;
+  font-size: 20px;
+}
+
+.footer-right {
+  font-size: 12px;
+  font-weight: 600;
+}
