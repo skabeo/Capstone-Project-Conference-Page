@@ -1,5 +1,6 @@
 .intro-page {
-  margin-top: 50px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .intro-text {
@@ -33,7 +34,62 @@
   font-size: 14px;
 }
 
-@media screen and (min-width: 768px) {
+.drum,
+.drum2,
+.mask,
+.listening {
+  position: absolute;
+}
+
+.mask {
+  bottom: 0;
+  left: -13%;
+  width: 70px;
+}
+
+.listening {
+  top: -10%;
+  left: 18%;
+  width: 30px;
+}
+
+.drum {
+  top: 36%;
+  right: -6%;
+  width: 50px;
+}
+
+.drum2 {
+  top: 23%;
+  left: -9%;
+  width: 50px;
+}
+
+@media (min-width: 580px) and (max-width: 767px) {
+  .listening {
+    left: 15%;
+    width: 40px;
+  }
+
+  .drum {
+    top: 37%;
+    right: -4%;
+    width: 60px;
+  }
+
+  .drum2 {
+    left: -5.5%;
+    width: 50px;
+  }
+
+  .mask {
+    left: -8%;
+    bottom: -4%;
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1699px) {
   .intro-main {
     font-weight: 900;
     font-size: 50px;
@@ -49,7 +105,7 @@
   .description-container {
     max-width: 900px;
     padding: 25px 50px;
-    background-color: #f5f6fb;
+    background-color: #fff;
   }
 
   .description {
@@ -76,5 +132,54 @@
 
   .main-sub {
     margin-top: -25px;
+  }
+
+  .listening {
+    width: 40px;
+  }
+
+  .drum {
+    top: 20%;
+    right: -2%;
+    width: 80px;
+  }
+
+  .drum2 {
+    top: 7%;
+    left: -3%;
+    width: 70px;
+  }
+
+  .mask {
+    left: -5.5%;
+    bottom: -10%;
+    width: 120px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  .listening {
+    width: 60px;
+  }
+
+  .drum2 {
+    top: 20%;
+    left: -3%;
+    width: 70px;
+  }
+
+  .description-container {
+    max-width: 1000px;
+  }
+
+  .drum {
+    top: 25%;
+    right: -1.5%;
+    width: 80px;
+  }
+
+  .mask {
+    left: -4%;
+    width: 100px;
   }
 }
