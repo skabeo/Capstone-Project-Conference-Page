@@ -47,13 +47,13 @@ const artist = [
     accolades: 'Experience the raw and soulful vocals of Nigerian sensation, Tems, as she takes Afrochella 2023',
     img: 'img/speakers/tems.png',
   },
-]
+];
 
 function displayData() {
   const dataDisplay = document.querySelector('#data-display');
   for (let i = 0; i < artist.length; i += 1) {
-    let performer = artist[i];
-    let dataItems = document.createElement('div');
+    const performer = artist[i];
+    const dataItems = document.createElement('div');
     dataItems.classList.add('dynamic-container');
     dataItems.innerHTML = `
     <div class="d-flex align-items-center gap-3 mb-4">
