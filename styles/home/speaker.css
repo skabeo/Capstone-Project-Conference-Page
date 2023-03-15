@@ -41,12 +41,12 @@
   }
 
   .speaker {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 15px;
   }
 
   .speaker-des {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .speak-line {
@@ -54,7 +54,7 @@
   }
 
   .speaker-achievement {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   #data-display {
