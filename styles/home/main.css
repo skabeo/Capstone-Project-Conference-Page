@@ -27,13 +27,15 @@
 }
 
 .card-des {
-  font-size: 13.45px;
+  font-size: 10.7px;
+  max-width: 200px;
 }
 
 .card-occ {
   color: #ec5242;
   font-weight: 700;
   opacity: 1;
+  font-size: 14.27px;
 }
 
 .signup-btn {
@@ -43,6 +45,7 @@
   width: 80%;
   padding: 20px 15px;
   border-radius: 2px;
+  font-family: inherit;
 }
 
 .desk-main-container {
@@ -54,6 +57,7 @@
   background-color: #535557;
   opacity: 0.73;
   padding: 20px 15px;
+  cursor: pointer;
 }
 
 .desk-main-card:hover {
@@ -62,6 +66,13 @@
 
 .see-program {
   margin-top: 70px;
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+  .card-des {
+    max-width: 300px;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -87,7 +98,6 @@
 
 @media screen and (min-width: 768px) {
   .main-content-container {
-    margin-top: 150px;
     padding-bottom: 80px;
   }
 
@@ -101,9 +111,10 @@
 
   .card-occ {
     margin-top: 15px;
+    font-size: 24px;
   }
 
   .card-des {
-    font-size: 16.7px;
+    font-size: 13px;
   }
 }

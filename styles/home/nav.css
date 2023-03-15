@@ -18,13 +18,30 @@
 
 .navbar {
   background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.nav-about {
+.cap-logo {
+  width: 100px;
+}
+
+.nav-link {
+  transition: color 0.25s;
+}
+
+.nav-link:hover {
   color: #ec5242;
 }
 
 .cc {
   margin-left: 20px;
   border: 4px solid #ec5242;
+}
+
+@media screen and (min-width: 768px) {
+  .desk-hero-page {
+    background-color: #e6e9ef;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
 }

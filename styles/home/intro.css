@@ -32,7 +32,7 @@
 }
 
 .description {
-  font-size: 13.23px;
+  font-size: 12px;
 }
 
 .date {
@@ -57,5 +57,13 @@
 
   .venue {
     font-size: 20px;
+  }
+
+  .description-container {
+    max-width: 700px;
+  }
+
+  .description {
+    font-size: 13px;
   }
 }
