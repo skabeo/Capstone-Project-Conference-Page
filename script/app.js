@@ -65,7 +65,7 @@ function displayData() {
         <p class="speaker-achievement mt-3">${performer.accolades}</p>
       </div>
     </div>
-    `
+    `;
     dataDisplay.appendChild(dataItems);
   }
 }
