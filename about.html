@@ -65,13 +65,26 @@
   </div>
 
   <div class="top-color">
-    <nav class="d-block d-md-none">
-      <div class="hamburger">
+    <div class="d-block d-md-none">
+      <div id="menu" class="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </nav>
+
+      <nav id="mobile-menu" class="mobile-menu show">
+        <div class="container">
+          <img src="img/close-btn.png" alt="close" class="close-btn">
+          <ul class="list-unstyled d-flex flex-column gap-5 mt-5">
+            <li class="fs-1 fw-bold"><a href="#index.html">Home</a></li>
+            <li class="fs-1 fw-bold"><a href="#about.html">About</a></li>
+            <li class="fs-1 fw-bold">Program</li>
+            <li class="fs-1 fw-bold">Join</li>
+            <li class="fs-1 fw-bold">Sponsor</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="container d-none d-md-flex justify-content-end align-items-center gap-2">
       <img src="img/home.png" alt="home" class="home-icon">
@@ -154,6 +167,7 @@
       </div>
     </div>
   </section>
+  <script src="script/about.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
