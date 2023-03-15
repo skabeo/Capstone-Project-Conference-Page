@@ -1,4 +1,4 @@
-<h3><b>Afrochella README</b></h3>
+<h2 align="center">Afrochella README</h2>
 
 # 📗 Table of Contents
 
@@ -112,8 +112,6 @@ Github Pages
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **Add a functional link to the program link in the navbar**
 - [ ] **Add a functional link to the Join link in the navbar**
