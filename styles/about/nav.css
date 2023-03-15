@@ -54,3 +54,27 @@
 .about-nav:hover {
   color: #ec5242;
 }
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 9999;
+  padding-top: 20px;
+  background-color: #e6e9ef;
+}
+
+.show {
+  display: none;
+}
+
+.close-btn {
+  width: 33.33px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
