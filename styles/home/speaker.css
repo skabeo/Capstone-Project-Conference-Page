@@ -22,6 +22,7 @@
   background-color: #fff;
   border: 1px solid #9297a0;
   font-size: 12px;
+  width: 100%;
 }
 
 .fa-angle-down {
@@ -32,10 +33,6 @@
 .more-icon {
   height: 20px;
   width: 20px;
-}
-
-.speaker-container {
-  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 768px) {
@@ -58,5 +55,12 @@
 
   .speaker-achievement {
     font-size: 16px;
+  }
+
+  #data-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
   }
 }
