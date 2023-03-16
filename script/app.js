@@ -134,14 +134,14 @@ function displayItems() {
   artist.forEach((item) => {
     container.appendChild(createItemElement(item));
   });
-};
+}
 
 function displayTwoItems() {
   container.innerHTML = '';
   artist.slice(0, 2).forEach((item) => {
     container.appendChild(createItemElement(item));
   });
-};
+}
 
 function init() {
   if (window.innerWidth < 768) {
@@ -167,8 +167,8 @@ function init() {
       displayTwoItems();
     } else {
       displayItems();
-    };
+    }
   });
-};
+}
 
 init();
