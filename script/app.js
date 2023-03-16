@@ -49,68 +49,9 @@ const artist = [
   },
 ];
 
-// const initialDisplayCount = 2;
-
-// function displayItems() {
-//   const container = document.querySelector('#data-display');
-//   container.innerHTML = '';
-
-//   for (let i = 0; i < Math.min(artist.length, initialDisplayCount); i += 1) {
-//     const item = artist[i];
-//     const element = document.createElement('div');
-//     element.innerHTML = `
-//     <div class="d-flex align-items-center gap-3 mb-4">
-//        <img src="${item.img}" alt="sark">
-//        <div>
-//          <p class="speaker">${item.name}</p>
-//          <p class="speaker-des mt-1">${item.achievement}</p>
-//          <p class="speak-line mt-2"></p>
-//          <p class="speaker-achievement mt-3">${item.accolades}</p>
-//        </div>
-//     </div>
-//     `;
-//     container.appendChild(element);
-//   }
-// }
-
-// function showMore() {
-//   const container = document.querySelector('#data-display');
-//   container.innerHTML = '';
-
-//   for (let i = 0; i < artist.length; i += 1) {
-//     const item = artist[i];
-//     const element = document.createElement('div');
-//     element.innerHTML = `
-//     <div class="d-flex align-items-center gap-3 mb-4">
-//        <img src="${item.img}" alt="sark">
-//        <div>
-//          <p class="speaker">${item.name}</p>
-//          <p class="speaker-des mt-1">${item.achievement}</p>
-//          <p class="speak-line mt-2"></p>
-//          <p class="speaker-achievement mt-3">${item.accolades}</p>
-//        </div>
-//     </div>
-//     `;
-//     container.appendChild(element);
-//   }
-//   moreBtn.classList.add('d-none');
-//   lessBtn.classList.remove('d-none');
-// }
-
-// function showLess() {
-//   displayItems();
-//   moreBtn.classList.remove('d-none');
-//   lessBtn.classList.add('d-none');
-// }
-
-// displayItems();
-
 const container = document.querySelector('#data-display');
 const moreBtn = document.querySelector('#more');
 const lessBtn = document.querySelector('#less');
-
-// moreBtn.addEventListener('click', showMore);
-// lessBtn.addEventListener('click', showLess);
 
 function createItemElement(item) {
   const itemElement = document.createElement('div');
