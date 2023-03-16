@@ -51,7 +51,7 @@ const artist = [
 
 const initialDisplayCount = 2;
 
-const displayCount = 6;
+// const displayCount = 6;
 
 function displayItems() {
   const container = document.querySelector('#show-cont');
