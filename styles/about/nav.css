@@ -60,10 +60,15 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
+  bottom: 0;
   z-index: 9999;
   padding-top: 20px;
   background-color: #e6e9ef;
+}
+
+.nav-about-mob,
+.nav-about {
+  opacity: 0.5;
 }
 
 .show {

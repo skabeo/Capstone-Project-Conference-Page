@@ -22,6 +22,7 @@
   background-color: #fff;
   border: 1px solid #9297a0;
   font-size: 12px;
+  width: 100%;
 }
 
 .fa-angle-down {
@@ -34,22 +35,18 @@
   width: 20px;
 }
 
-.speaker-container {
-  grid-template-columns: 1fr 1fr;
-}
-
 @media screen and (min-width: 768px) {
   .feat-text {
     font-size: 23px;
   }
 
   .speaker {
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 900;
+    font-size: 15px;
   }
 
   .speaker-des {
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .speak-line {
@@ -57,6 +54,13 @@
   }
 
   .speaker-achievement {
-    font-size: 16px;
+    font-size: 14px;
+  }
+
+  #data-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 30px;
   }
 }

@@ -5,6 +5,11 @@ body {
   font-family: Lato, sans-serif;
 }
 
+.desk-main-page {
+  background-image: url('img/background/main-background.png');
+  background-size: cover;
+}
+
 *,
 *::before,
 *::after,

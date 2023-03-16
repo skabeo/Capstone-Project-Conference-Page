@@ -66,6 +66,12 @@
 
 .see-program {
   margin-top: 70px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.see-program:hover {
+  color: #ec5242;
 }
 
 @media (min-width: 480px) and (max-width: 575px) {

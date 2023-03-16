@@ -47,7 +47,16 @@
   margin-top: 40px;
 }
 
+.footer-logo {
+  width: 100px;
+}
+
+.footer-cont {
+  padding: 30px 20px;
+}
+
 .footer-right {
+  margin-top: 10%;
   font-size: 12px;
   font-weight: 600;
   margin-bottom: 20px;
@@ -62,6 +71,7 @@
   }
 
   .footer-right {
+    margin-top: auto;
     margin-bottom: 7px;
     font-size: 15px;
   }
@@ -69,5 +79,13 @@
   .footer-info {
     font-size: 15px;
     margin-top: 0;
+  }
+
+  .footer-logo {
+    width: auto;
+  }
+
+  .footer-cont {
+    padding: 0;
   }
 }

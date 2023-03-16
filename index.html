@@ -25,8 +25,8 @@
     <div class="user-display d-none d-md-block">
       <div class="container">
         <ul class="user-ul list-unstyled d-flex justify-content-end align-items-center gap-3 py-2">
-          <li><a><img src="img/facebook.svg"></a></li>
-          <li><a><img src="img/twitter.svg"></a></li>
+          <li><a><img src="img/facebook.svg" alt="facebook"></a></li>
+          <li><a><img src="img/twitter.svg" alt="twitter"></a></li>
           <li class="text-white"><a>English</a></li>
           <li class="text-white"><a>My Page</a></li>
           <li class="text-white"><a>Logout</a></li>
@@ -36,11 +36,11 @@
   
     <nav class="navbar navbar-expand-md navbar-light p-0 d-none d-md-block">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/cap icon.png" alt="logo" class="img-fluid cap-logo"></a>
-        <div class="collapse navbar-collapse d-flex justify-content-end gap-4" id="navbarNav">
-          <ul class="navbar-nav d-flex align-items-center gap-5 py-3">
+        <a class="navbar-brand" href="https://skabeo.github.io/Capstone-Project-Conference-Page/index.html"><img src="img/cap icon.png" alt="logo" class="cap-logo"></a>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center gap-4 py-3">
             <li class="nav-item active">
-              <a class="nav-link nav-about" href="#">About<span class="sr-only">(current)</span></a>
+              <a class="nav-link nav-about" href="https://skabeo.github.io/Capstone-Project-Conference-Page/about.html">About<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Program</a>
@@ -63,7 +63,7 @@
     </nav>
   </div>
   
-  <div class="desk-hero-page">
+  <div class="desk-main-page">
     <div class="container-fluid container-sm welcome-page">
       <nav class="d-block d-md-none">
         <div class="hamburger">
@@ -72,12 +72,12 @@
           <span></span>
         </div>
       </nav>
-      
+
       <nav id="mobile-menu" class="mobile-menu show">
         <div class="container">
           <img src="img/close-btn.png" alt="close" class="close-btn">
           <ul class="list-unstyled d-flex flex-column gap-5 mt-5">
-            <li class="fs-1 fw-bold"><a href="https://skabeo.github.io/Capstone-Project-Conference-Page/index.html">Home</a></li>
+            <li class="fs-1 fw-bold nav-home"><a href="https://skabeo.github.io/Capstone-Project-Conference-Page/index.html">Home</a></li>
             <li class="fs-1 fw-bold"><a href="https://skabeo.github.io/Capstone-Project-Conference-Page/about.html">About</a></li>
             <li class="fs-1 fw-bold">Program</li>
             <li class="fs-1 fw-bold">Join</li>
@@ -88,7 +88,7 @@
   
       <section class="home-page">
         <p class="fs-2 mb-2 text-org">"Hello! Afro Chills"</p>
-        <p class="lh-1 text-gradient intro-text">AFROCHELLA NATIONAL<br> ENTERTAINMENT<br> 2023</p>
+        <h1 class="lh-1 text-gradient intro-text">AFROCHELLA NATIONAL<br> ENTERTAINMENT<br> 2023</h1>
         <div class="description-container">
           <p class="description text-center">Thank you for joining us in celebrating the vibrant and diverse cultures of Africa at Afrochella. Stay connected with us to continue the journey of empowering, educating, and entertaining the world about the beauty of Africa.</p>
         </div>
@@ -100,7 +100,7 @@
   
   <section class="main-program">
     <div class="main-content-container">
-      <p class="text-center main-text mb-3">Main Program</p>
+      <h2 class="text-center main-text mb-3">Main Program</h2>
       <p class="line mb-5"></p>
       <div class="d-flex flex-column gap-2 d-sm-none">
         <div class="main-card px-2 py-2 d-flex align-items-center gap-3">
@@ -162,7 +162,6 @@
         </div>
         <p class="text-center text-decoration-underline see-program">SEE THE WHOLE PROGRAM</p>
       </div>
-      
     </div>
   </section>
 
@@ -170,83 +169,9 @@
     <section class="featured-speakers mt-5">
       <p class="text-center mb-2 fw-bold feat-text">Performers</p>
       <p class="line mb-5"></p>
-      <div class="d-flex flex-column gap-5 d-md-none">
-        <div class="d-flex gap-3 align-items-center">
-          <img src="img/speakers/sark.png" alt="sark">
-          <div>
-            <p class="fw-bold">Sarkodie</p>
-            <p class="speaker-des mt-1">Sarkodie is a Ghanaian rapper and musician who has achieved international awards for his music</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">He was the first rapper from Africa to win the BET Best International Flow award in 2019.</p>
-          </div>
-        </div>
-        <div class="d-flex gap-3 align-items-center">
-          <img src="img/speakers/wiz.png" alt="wiz">
-          <div>
-            <p class="fw-bold">Wizkid</p>
-            <p class="speaker-des mt-1">Best overall artist for the year 2022</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Join us at Afrochella to experience the electrifying sound and dynamic stage presence of Wizkid, the Nigerian superstar taking the Afrobeats world by storm.</p>
-          </div>
-        </div>
-        <button class="more-speaker py-2 d-flex align-items-center justify-content-center">MORE<img class="more-icon" src="img/down-arrow.png"></button>
-      </div>
-      <div class="d-none d-md-grid gap-4 speaker-container">
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/sark.png" alt="sark">
-          <div>
-            <p class="speaker">Sarkodie</p>
-            <p class="speaker-des mt-1">Sarkodie is a Ghanaian rapper and musician who has achieved international awards for his music</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">He was the first rapper from Africa to win the BET Best International Flow award in 2019.</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/kwesi.png" alt="kwesi">
-          <div>
-            <p class="speaker">Kwesi Arthur</p>
-            <p class="speaker-des mt-1">Kwesi Arthur is a Ghanaian rapper and musician who gained recognition with his hit song "Grind Day"</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Experience the electrifying beats of rising Ghanaian star, Kwesi Arthur, at Afrochella 2023.</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/wiz.png" alt="wiz">
-          <div>
-            <p class="speaker">Wizkid</p>
-            <p class="speaker-des mt-1">Best overall artist for the year 2022</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Join us at Afrochella to experience the electrifying sound and dynamic stage presence of Wizkid, the Nigerian superstar taking the Afrobeats world by storm.</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/black.png" alt="black-sheriff">
-          <div>
-            <p class="speaker">Black Sheriff</p>
-            <p class="speaker-des mt-1">Released his debut album that topped the charts for several weeks.</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Get ready to vibe to the soulful tunes of Ghanaian artist, Black Sherif, as he takes the stage at Afrochella 2023.</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/rema.png" alt="rema">
-          <div>
-            <p class="speaker">Rema</p>
-            <p class="speaker-des mt-1">Currently has the most streamed song on TouTube</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Experience the dynamic and infectious sounds of Nigerian superstar, Rema, as he takes the stage at Afrochella 2023.</p>
-          </div>
-        </div>
-        <div class="d-flex align-items-center gap-4">
-          <img src="img/speakers/tems.png" alt="tems">
-          <div>
-            <p class="speaker">Tems</p>
-            <p class="speaker-des mt-1">Number three on most streamed African</p>
-            <p class="speak-line mt-2"></p>
-            <p class="speaker-achievement mt-3">Experience the raw and soulful vocals of Nigerian sensation, Tems, as she takes Afrochella 2023</p>
-          </div>
-        </div>
-      </div>
+      <div id="data-display"></div>
+      <button id="less" class="more-speaker d-md-none py-2 d-flex align-items-center justify-content-center d-none">LESS<img class="more-icon" src="img/down-arrow.png" alt="show-less"></button>
+      <button id="more" class="more-speaker d-md-none py-2 d-flex align-items-center justify-content-center">MORE<img class="more-icon" src="img/down-arrow.png" alt="show-more"></button>
     </section>
   </div>
 
@@ -255,10 +180,10 @@
       <p class="part-text text-center mb-3">Partner</p>
       <p class="part-line mx-auto"></p>
       <div class="d-flex justify-content-center align-items-center part-logo gap-5">
-        <img class="img-fluid" src="img/partners/airbnb.png">
-        <img class="img-fluid" src="img/partners/binance.png">
+        <img class="img-fluid" src="img/partners/airbnb.png" alt="airbnb">
+        <img class="img-fluid" src="img/partners/binance.png" alt="binance">
         <p class="coinbase">coinbase</p>
-        <img class="img-fluid" src="img/partners/dropbox.png">
+        <img class="img-fluid" src="img/partners/dropbox.png" alt="dropbox">
         <p class="google">Google</p>
       </div>
     </div>
@@ -268,8 +193,8 @@
     <section class="footer d-flex justify-content-center align-items-center">
       <img src="img/cap icon.png" alt="logo" class="img-fluid footer-logo">
       <div class="footer-des-container">
-        <p class="footer-right mb-3">2015 Creative Commons korea. All Rights Reserved</p>
-        <p class="footer-info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit explicabo ex vero facilis accusamus culpa hic quo similique sit consequatur!
+        <p class="footer-right mb-3">2023 Afrochella Entertaiment, Ghana. All Rights Reserved</p>
+        <p class="footer-info">Thank you for joining us in celebrating the vibrant and diverse cultures of Africa at Afrochella. Stay connected with us to continue the journey of empowering, educating, and entertaining the world about the beauty of Africa.
         </p>
       </div>
     </section>
