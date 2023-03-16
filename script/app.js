@@ -49,25 +49,85 @@ const artist = [
   },
 ];
 
-function displayData() {
-  const dataDisplay = document.querySelector('#data-display');
-  for (let i = 0; i < artist.length; i += 1) {
-    const performer = artist[i];
-    const dataItems = document.createElement('div');
-    dataItems.classList.add('dynamic-container');
-    dataItems.innerHTML = `
+const initialDisplayCount = 2;
+
+const displayCount = 6;
+
+function displayItems() {
+  const container = document.querySelector('#show-cont');
+  container.innerHTML = '';
+
+  for (let i = 0; i < Math.min(artist.length, initialDisplayCount); i += 1) {
+    const item = artist[i];
+    const element = document.createElement('div');
+    element.innerHTML = `
     <div class="d-flex align-items-center gap-3 mb-4">
-      <img src="${performer.img}" alt="sark">
-      <div>
-        <p class="speaker">${performer.name}</p>
-        <p class="speaker-des mt-1">${performer.achievement}</p>
-        <p class="speak-line mt-2"></p>
-        <p class="speaker-achievement mt-3">${performer.accolades}</p>
-      </div>
+       <img src="${item.img}" alt="sark">
+       <div>
+         <p class="speaker">${item.name}</p>
+         <p class="speaker-des mt-1">${item.achievement}</p>
+         <p class="speak-line mt-2"></p>
+         <p class="speaker-achievement mt-3">${item.accolades}</p>
+       </div>
     </div>
     `;
-    dataDisplay.appendChild(dataItems);
+    container.appendChild(element);
   }
 }
 
-displayData();
+function showMore() {
+  const container = document.querySelector('#show-cont');
+  container.innerHTML = '';
+
+  for (let i = 0; i < artist.length; i += 1) {
+    const item = artist[i];
+    const element = document.createElement('div');
+    element.innerHTML = `
+    <div class="d-flex align-items-center gap-3 mb-4">
+       <img src="${item.img}" alt="sark">
+       <div>
+         <p class="speaker">${item.name}</p>
+         <p class="speaker-des mt-1">${item.achievement}</p>
+         <p class="speak-line mt-2"></p>
+         <p class="speaker-achievement mt-3">${item.accolades}</p>
+       </div>
+    </div>
+    `;
+    container.appendChild(element);
+  }
+}
+
+function showLess() {
+  displayItems();
+}
+
+displayItems();
+
+// function displayData() {
+//   const dataDisplay = document.querySelector('#data-display');
+//   for (let i = 0; i < artist.length; i += 1) {
+//     const performer = artist[i];
+//     const dataItems = document.createElement('div');
+//     dataItems.classList.add('dynamic-container');
+//     dataItems.innerHTML = `
+//     <div class="d-flex align-items-center gap-3 mb-4">
+//       <img src="${performer.img}" alt="sark">
+//       <div>
+//         <p class="speaker">${performer.name}</p>
+//         <p class="speaker-des mt-1">${performer.achievement}</p>
+//         <p class="speak-line mt-2"></p>
+//         <p class="speaker-achievement mt-3">${performer.accolades}</p>
+//       </div>
+//     </div>
+//     `;
+//     dataDisplay.appendChild(dataItems);
+//   }
+// }
+
+// displayData();
+
+const moreBtn = document.querySelector('#more');
+const lessBtn = document.querySelector('#less');
+
+moreBtn.addEventListener('click', showMore);
+lessBtn.addEventListener('click', showLess);
