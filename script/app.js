@@ -49,85 +49,126 @@ const artist = [
   },
 ];
 
-const initialDisplayCount = 2;
+// const initialDisplayCount = 2;
 
-// const displayCount = 6;
+// function displayItems() {
+//   const container = document.querySelector('#data-display');
+//   container.innerHTML = '';
 
-function displayItems() {
-  const container = document.querySelector('#show-cont');
-  container.innerHTML = '';
-
-  for (let i = 0; i < Math.min(artist.length, initialDisplayCount); i += 1) {
-    const item = artist[i];
-    const element = document.createElement('div');
-    element.innerHTML = `
-    <div class="d-flex align-items-center gap-3 mb-4">
-       <img src="${item.img}" alt="sark">
-       <div>
-         <p class="speaker">${item.name}</p>
-         <p class="speaker-des mt-1">${item.achievement}</p>
-         <p class="speak-line mt-2"></p>
-         <p class="speaker-achievement mt-3">${item.accolades}</p>
-       </div>
-    </div>
-    `;
-    container.appendChild(element);
-  }
-}
-
-function showMore() {
-  const container = document.querySelector('#show-cont');
-  container.innerHTML = '';
-
-  for (let i = 0; i < artist.length; i += 1) {
-    const item = artist[i];
-    const element = document.createElement('div');
-    element.innerHTML = `
-    <div class="d-flex align-items-center gap-3 mb-4">
-       <img src="${item.img}" alt="sark">
-       <div>
-         <p class="speaker">${item.name}</p>
-         <p class="speaker-des mt-1">${item.achievement}</p>
-         <p class="speak-line mt-2"></p>
-         <p class="speaker-achievement mt-3">${item.accolades}</p>
-       </div>
-    </div>
-    `;
-    container.appendChild(element);
-  }
-}
-
-function showLess() {
-  displayItems();
-}
-
-displayItems();
-
-// function displayData() {
-//   const dataDisplay = document.querySelector('#data-display');
-//   for (let i = 0; i < artist.length; i += 1) {
-//     const performer = artist[i];
-//     const dataItems = document.createElement('div');
-//     dataItems.classList.add('dynamic-container');
-//     dataItems.innerHTML = `
+//   for (let i = 0; i < Math.min(artist.length, initialDisplayCount); i += 1) {
+//     const item = artist[i];
+//     const element = document.createElement('div');
+//     element.innerHTML = `
 //     <div class="d-flex align-items-center gap-3 mb-4">
-//       <img src="${performer.img}" alt="sark">
-//       <div>
-//         <p class="speaker">${performer.name}</p>
-//         <p class="speaker-des mt-1">${performer.achievement}</p>
-//         <p class="speak-line mt-2"></p>
-//         <p class="speaker-achievement mt-3">${performer.accolades}</p>
-//       </div>
+//        <img src="${item.img}" alt="sark">
+//        <div>
+//          <p class="speaker">${item.name}</p>
+//          <p class="speaker-des mt-1">${item.achievement}</p>
+//          <p class="speak-line mt-2"></p>
+//          <p class="speaker-achievement mt-3">${item.accolades}</p>
+//        </div>
 //     </div>
 //     `;
-//     dataDisplay.appendChild(dataItems);
+//     container.appendChild(element);
 //   }
 // }
 
-// displayData();
+// function showMore() {
+//   const container = document.querySelector('#data-display');
+//   container.innerHTML = '';
 
+//   for (let i = 0; i < artist.length; i += 1) {
+//     const item = artist[i];
+//     const element = document.createElement('div');
+//     element.innerHTML = `
+//     <div class="d-flex align-items-center gap-3 mb-4">
+//        <img src="${item.img}" alt="sark">
+//        <div>
+//          <p class="speaker">${item.name}</p>
+//          <p class="speaker-des mt-1">${item.achievement}</p>
+//          <p class="speak-line mt-2"></p>
+//          <p class="speaker-achievement mt-3">${item.accolades}</p>
+//        </div>
+//     </div>
+//     `;
+//     container.appendChild(element);
+//   }
+//   moreBtn.classList.add('d-none');
+//   lessBtn.classList.remove('d-none');
+// }
+
+// function showLess() {
+//   displayItems();
+//   moreBtn.classList.remove('d-none');
+//   lessBtn.classList.add('d-none');
+// }
+
+// displayItems();
+
+const container = document.querySelector('#data-display');
 const moreBtn = document.querySelector('#more');
 const lessBtn = document.querySelector('#less');
 
-moreBtn.addEventListener('click', showMore);
-lessBtn.addEventListener('click', showLess);
+// moreBtn.addEventListener('click', showMore);
+// lessBtn.addEventListener('click', showLess);
+
+function createItemElement(item) {
+  const itemElement = document.createElement('div');
+  itemElement.classList.add('item');
+  itemElement.innerHTML = `
+  <div class="d-flex align-items-center gap-3 mb-4">
+      <img src="${item.img}" alt="sark">
+        <div>
+          <p class="speaker">${item.name}</p>
+          <p class="speaker-des mt-1">${item.achievement}</p>
+          <p class="speak-line mt-2"></p>
+          <p class="speaker-achievement mt-3">${item.accolades}</p>
+        </div>
+     </div>
+  `;
+  return itemElement;
+}
+
+function displayItems() {
+  container.innerHTML = '';
+  artist.forEach((item) => {
+    container.appendChild(createItemElement(item));
+  });
+};
+
+function displayTwoItems() {
+  container.innerHTML = '';
+  artist.slice(0, 2).forEach((item) => {
+    container.appendChild(createItemElement(item));
+  });
+};
+
+function init() {
+  if (window.innerWidth < 768) {
+    displayTwoItems();
+  } else {
+    displayItems();
+  }
+
+  moreBtn.addEventListener('click', () => {
+    displayItems();
+    moreBtn.classList.add('d-none');
+    lessBtn.classList.remove('d-none');
+  });
+
+  lessBtn.addEventListener('click', () => {
+    displayTwoItems();
+    lessBtn.classList.add('d-none');
+    moreBtn.classList.remove('d-none');
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+      displayTwoItems();
+    } else {
+      displayItems();
+    };
+  });
+};
+
+init();
